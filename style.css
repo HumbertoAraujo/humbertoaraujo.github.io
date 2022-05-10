@@ -10,7 +10,7 @@
   }
   #foto {
     border-radius: 100%;
-    width: 250px;
+    width: 300px;
     align-self: center;
     border-style: solid;
 
@@ -23,9 +23,9 @@
     align-content: center;
   }
   .indice li{
-    position:relative;
+    position:sticky;
     float:left;
-    border-right:1px solid #C9ADA7;
+    border-right:1px solid #22223B;
   }
 
   .indice li a{
@@ -38,11 +38,11 @@
   }
 
   .indice li a:hover{
-    background:#C9ADA7;
+    background:#22223B;
     color:#C9ADA7;
-    -moz-box-shadow:0 3px 10px 0 #C9ADA7;
-    -webkit-box-shadow:0 3px 10px 0 #C9ADA7;
-    text-shadow:0px 0px 5px #C9ADA7;
+    -moz-box-shadow:0 3px 10px 0 #22223B;
+    -webkit-box-shadow:0 3px 10px 0 #22223B;
+    text-shadow:0px 0px 5px #22223B;
   }
 
   p {
@@ -57,3 +57,7 @@
     padding: 3%;
     list-style:none;
   }
+.menu {
+    position: sticky;
+    margin-left: 30%;
+}
