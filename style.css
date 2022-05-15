@@ -6,8 +6,7 @@
       color: #F2E9E4;
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;    
-      background-image: linear-gradient(to bottom, #22223B, #543a72 )   
-      /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f5/Computer-screen-code-glitch-animation-gif-background-free.gif");     */
+      background-image: linear-gradient(to bottom, #22223B, #4e4558)         
     }
     #foto {
       border-radius: 100%;
@@ -92,13 +91,14 @@
       margin-bottom: 2%;
       padding: 3%;
       background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f5/Computer-screen-code-glitch-animation-gif-background-free.gif");  
-      border-radius: 100%;     
+      border-radius: 25px;     
     }
     p:hover {
       width: 72%;     
       margin-left: 14%;
       background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f5/Computer-screen-code-glitch-animation-gif-background-free.gif");  
-      border-radius: 100px;
+      border-radius: 25px;
+      padding-bottom: 15px;
     }
     #apresentacao {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
