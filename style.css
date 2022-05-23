@@ -83,7 +83,7 @@
     p {
       width: 72%;     
       margin-left: 14%;
-      text-indent: 5em;
+      text-indent: 50px;
     }
      .soft:hover, .hard:hover {
       display: inline-block;
