@@ -7,6 +7,7 @@
     <title>Apresentação-Humberto de Oliveira Araújo</title>
     <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Special+Elite#type-tester">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <head>
@@ -36,8 +37,8 @@
       <section class="borderbottom">
         <h2 id="habilidades">Habilidades</h2>
         <table>
-          <section class="soft">
-            <h3>Soft Skills</h3>
+          <section class="soft" data-aos="flip-down">
+            <h3 data-aos="fade-left">Soft Skills</h3>
             <ul class="h2Title">
               <li><em><b>Auto controle sob pressão</b></em></li>
               <li><em>Pensamento Criativo e Crítico</em></li>
@@ -48,8 +49,8 @@
               </li><li><em>Responsábilidade e honestidade</em></li>
             </ul>
           </section>
-          <section class="hard">
-            <h3>Hard Skills</h3>
+          <section class="hard" data-aos="flip-down">
+            <h3 data-aos="fade-right">Hard Skills</h3>
             <ul class="h2Title">
               <li><em>Conhecimento avançado em <b>Redes</b></em></li>
               <li><em>Conhecimento avançado em <b>Telecomunicações</b></em></li>
@@ -66,7 +67,7 @@
           </section>
         </table>
       </section>
-      <section class="borderbottom" id="estiloFormacao" >
+      <section class="borderbottom" id="estiloFormacao" data-aos="flip-up">
         <h2 id="formacao" >Formação</h2>
         <ul class="h2Title">
           <li><em><b>Curso Desenvolvimento Web FullStack - Trybe</b></em> "Conclusão 04/2023"</li>
@@ -77,7 +78,7 @@
       </section>      
     </main>
     <aside>
-      <section class="borderbottom">
+      <section class="borderbottom" data-aos="zoom-in">
         <h2 class="h2Title blogstitle" >Blogs que mais acesso </h2>  
         <nav id="blogs">       
           <a href="https://blog.arduino.cc/" target="_blank"> <img src="/images/arduino-logo.png" alt="logoArduino" width="150px"> </a>
@@ -87,13 +88,17 @@
       </section>
     </aside>
     <footer>
-      <section>
+      <section data-aos="zoom-out-up">
         <h2 id="titlecontatos" class="h2Title">Contatos</h2>
         <nav id="contatos">
         <a href="https://www.linkedin.com/in/humbertoaraujo1985/"target="_blank"> <img src="/images/kindpng_3854961.png" alt="IconLinkedin" width="80px"> </a>
         <a href="https://github.com/HumbertoAraujo" target="_blank"> <img src="/images/github-icon.png" alt="iconGithub" width="80px"> </a></nav>
-        <h5><a href="#foto"> <img src="/images/photoIcon.png" alt="Iconfoto" width="50px"> </a></h5>
+        <h5><a href="#foto"> <img src="/images/photoIcon.png" alt="Iconfoto" width="50px" > </a></h5>
       </section>      
-    </footer>    
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>    
   </body>
 </html>

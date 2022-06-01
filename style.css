@@ -85,27 +85,6 @@
       margin-left: 14%;
       text-indent: 50px;
     }
-     .soft:hover, .hard:hover {
-      display: inline-block;
-      vertical-align: top;
-      align-items: center;
-      margin-bottom: 2%;
-      padding: 2%;
-      font-size: 1.5em;
-      border-radius: 25px;     
-    }
-    p:hover {
-      width: 72%;     
-      margin-left: 14%;
-      font-size: 1.5em;
-      border-radius: 25px;
-      padding: 2%;
-    }
-
-    #estiloFormacao:hover {
-      font-size: 1.5em;
-    }
-
     #apresentacao {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       padding: 3px;
