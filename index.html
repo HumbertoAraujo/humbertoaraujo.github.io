@@ -13,11 +13,11 @@
     <head>
       <nav class="menu">   
         <ul class="indice">
-          <li><a href="#apresentacao">Apresentação</a></li>
-          <li><a href="#habilidades">Habilidades</a></li>
-          <li><a href="#formacao">Formação</a></li>   
-          <li><a href="#blogs">Blogs Preferidos</a></li>
-          <li><a href="#contatos">Contatos</a></li>
+          <li class="nav"><a href="#apresentacao">Apresentação</a></li>
+          <li class="nav"><a href="#habilidades">Habilidades</a></li>
+          <li class="nav"><a href="#formacao">Formação</a></li>   
+          <li class="nav"><a href="#blogs">Blogs Preferidos</a></li>
+          <li class="nav"><a href="#contatos">Contatos</a></li>
         </ul>
       </nav>
     </head>
@@ -25,7 +25,7 @@
       <img id="foto" src="/images/PerfilLinkedin.jpeg" alt="Foto Humberto" height="300px"/>
       <article class="borderbottom">
         <h1 id="apresentacao" class="typing-animation">Olá, eu sou o Humberto de Oliveira Araújo! =)</h1>
-                <p>
+                <p id="paragrafo">
           
            Sou natural de São Leopoldo(RS), atualmente morando em Garopaba(SC), sou um apaixonado por tecnologia e desafios, possuo 15 anos de experiência em telecomunicações, tendo participado como líder e liderado em equipes de alto desempenho em projetos de implantação e otimização de sistemas celular.
           Participei ativamente da implantação dos sistema 2G/3G/4G nos 2 maiores fornecedores do mundo que atuam no Brasil,  e dentro das principais operadoras do país como Consultor Especialista Técnico, e em Gestão de Projetos.
@@ -97,8 +97,13 @@
       </section>      
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animatelo/1.0.3/animatelo.min.js" integrity="sha512-GBZQa/U9vLC9i4OHqcw0s6TKMuWtKQnEDqMu1MA1n8xZzU6VkgWRwBh5J/wK6K8HuF5Y0te0U48YmHw59qcIMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       AOS.init();
+      window.animatelo.flip('#foto');
+      window.animatelo.fadeIn('#paragrafo');
+      window.animatelo.jello('.nav');
+
     </script>    
   </body>
 </html>
