@@ -97,10 +97,6 @@
       overflow: hidden;
     } 
 
-    #titleBadges {
-      margin-top: 0px;
-    }
-
     .typing-animation {
       animation: blinkCursor 800ms infinite normal, typing 5s steps(40) 1s both;
     }
