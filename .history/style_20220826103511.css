@@ -98,14 +98,14 @@
     } 
 
     .typing-animation {
-      animation: blinkCursor 800ms infinite normal, typing 3s steps(40) 1s both;
+      animation: blinkCursor 800ms infinite normal, typing 5s steps(40) 1s both;
     }
 
 @keyframes typing {
   from{
     width: 0;
   } to {
-    width: 21.5em;
+    width: 20em;
   }
 }
 
