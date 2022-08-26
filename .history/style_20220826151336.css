@@ -98,13 +98,15 @@
       white-space: nowrap;
       overflow: hidden;
     } 
+
     #titleBadges {
       padding-top: 0;
     }
+
     .typing-animation {
       animation: blinkCursor 800ms infinite normal, typing 3s steps(40) 1s both;
     }
-    
+
 @keyframes typing {
   from{
     width: 0;

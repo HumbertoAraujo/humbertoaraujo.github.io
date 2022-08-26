@@ -75,7 +75,7 @@
       border-bottom: dotted 1px #F2E9E4;  
       margin-bottom: 2%;   
       padding-bottom: 2%; 
-      padding-top: 0;
+      padding-top: 2%;
     }
     .blogstitle, #apresentacao, p {
 
@@ -98,13 +98,11 @@
       white-space: nowrap;
       overflow: hidden;
     } 
-    #titleBadges {
-      padding-top: 0;
-    }
+
     .typing-animation {
       animation: blinkCursor 800ms infinite normal, typing 3s steps(40) 1s both;
     }
-    
+
 @keyframes typing {
   from{
     width: 0;

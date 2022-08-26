@@ -3,7 +3,6 @@ function animationPicture(){
     picture.addEventListener('click', function(){
         window.animatelo.flip('#foto');
         window.animatelo.jello('.nav');
-        
     })
 
 }
