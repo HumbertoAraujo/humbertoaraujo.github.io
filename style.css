@@ -571,6 +571,12 @@ body {
   .nav-menu {
     display: flex;
   }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
   .nav-menu.active {
     display: flex;
     flex-direction: column;
