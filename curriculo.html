@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humberto de Oliveira Araujo - Currículo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            min-height: 297mm;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+        
+        .header .title {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .contact-item i {
+            width: 16px;
+            text-align: center;
+        }
+        
+        .main-content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            position: relative;
+        }
+        
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #e74c3c;
+        }
+        
+        .summary {
+            font-size: 1.1em;
+            text-align: justify;
+            color: #555;
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            border-left: 4px solid #3498db;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+        }
+        
+        .company {
+            color: #e74c3c;
+            font-weight: 600;
+            margin-top: 2px;
+        }
+        
+        .period {
+            color: #7f8c8d;
+            font-weight: 500;
+            background: #ecf0f1;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .job-description {
+            margin-top: 15px;
+            text-align: justify;
+            color: #555;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-category h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .skill-list {
+            list-style: none;
+        }
+        
+        .skill-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+            color: #555;
+        }
+        
+        .skill-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .skill-list li::before {
+            content: '▶';
+            color: #3498db;
+            margin-right: 10px;
+        }
+        
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .cert-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #27ae60;
+            text-align: center;
+        }
+        
+        .cert-name {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .cert-issuer {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+                max-width: none;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px 20px;
+            }
+            .header h1 {
+                font-size: 2em;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .main-content {
+                padding: 30px 20px;
+            }
+            .experience-header {
+                flex-direction: column;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Humberto de Oliveira Araujo</h1>
+            <div class="title">Especialista em TI & Telecomunicações | Gestão de Projetos & Equipes | DevOps | Data Science</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i>📍</i>
+                    <span>Garopaba, SC</span>
+                </div>
+                <div class="contact-item">
+                    <i>📱</i>
+                    <span>(48) 99130-2114</span>
+                </div>
+                <div class="contact-item">
+                    <i>✉️</i>
+                    <span>humberto.nro@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i>💼</i>
+                    <span>linkedin.com/in/humbertoaraujo1985</span>
+                </div>
+                <div class="contact-item">
+                    <i>🌐</i>
+                    <span>humbertoaraujo.github.io</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <section class="section">
+                <h2>Perfil Profissional</h2>
+                <div class="summary">
+                    Profissional experiente com mais de 20 anos de atuação em TI e Telecomunicações, especializado em gestão de projetos, infraestrutura de redes, desenvolvimento de software e análise de dados. Pós-graduado em DevOps e MBA em Data Science, com sólida experiência em liderança de equipes e implementação de soluções tecnológicas complexas para grandes operadoras e empresas do setor.
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Experiência Profissional</h2>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Coordenador de TI</div>
+                            <div class="company">Duoward</div>
+                        </div>
+                        <div class="period">Nov 2023 - Atual</div>
+                    </div>
+                    <div class="job-description">
+                        Coordeno projetos tecnológicos complexos incluindo o Surfland Brasil Garopaba, gerenciando infraestrutura completa de parques temáticos: redes POL Fiberhome, CFTV Digifort, Mikrotik, VoIP, servidores, sistemas, sonorização, redes Wi-Fi de alto desempenho, controles de acesso, PDVs, desenvolvimento de software, BI e automações.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Consultor de TI</div>
+                            <div class="company">Jobway</div>
+                        </div>
+                        <div class="period">Set - Out 2023</div>
+                    </div>
+                    <div class="job-description">
+                        Atuação como consultor especializado em vendas, implantação e sustentação de equipamentos e serviços de infraestrutura de TI e Automação Residencial/Comercial para clientes regionais. Prestação de suporte técnico aos laboratórios de manutenção e reparo de equipamentos de TI e telefonia celular, garantindo excelência no atendimento e soluções tecnológicas adequadas às necessidades dos clientes.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Solutions Analyst II</div>
+                            <div class="company">Capgemini</div>
+                        </div>
+                        <div class="period">Ago 2022 - Set 2023</div>
+                    </div>
+                    <div class="job-description">
+                        Atuei no suporte N2 e N3 para ambientes On-Premise na Torre Windows Server, seguindo metodologias ITIL-4, Six Sigma e práticas ágeis. Promovido de Solutions Analyst I para II em junho/2023, desenvolvendo expertise em Cloud Azure e AWS.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Consultor Gerente de Projetos</div>
+                            <div class="company">Huawei Centro Oeste / Neomera</div>
+                        </div>
+                        <div class="period">Mai - Jul 2017</div>
+                    </div>
+                    <div class="job-description">
+                        Responsável por projetos de implantação de redes PTN e DWDM Huawei para a OI em 7 estados. Gerenciei todo o ciclo do projeto desde definição de escopo até faturamento, coordenando equipes técnicas e terceirizadas, mantendo qualidade e margens estabelecidas.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Consultor / Analista Administrativo II</div>
+                            <div class="company">Vivo Centro Oeste / Icomon</div>
+                        </div>
+                        <div class="period">Mai 2016 - Mai 2017</div>
+                    </div>
+                    <div class="job-description">
+                        Liderei projeto de migração de 2.178 NodeBs Ericsson 3G/4G para rede IP L3, abrangendo 7 estados. Prestei suporte técnico especializado em equipamentos Ericsson, configurações L2/L3 em redes metro e rádios ETH de múltiplos fabricantes.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Telecom Analyst SR</div>
+                            <div class="company">Ericsson Gestão e Serviços</div>
+                        </div>
+                        <div class="period">Jul 2012 - Abr 2016</div>
+                    </div>
+                    <div class="job-description">
+                        <strong>Evolução profissional de Técnico para Analyst SR em projetos críticos 2G/3G/4G:</strong><br><br>
+                        
+                        <strong>• Controle de Projetos Claro RS (Mar-Abr 2016):</strong> Planejamento e controle completo de instalação, integração, refiliação e migração de meio de transmissão. Gestão de terceirizadas e equipes técnicas, elaboração de relatórios diários para gestores e áreas operacionais. Controle de processos específicos: Route Data (Bdraf), SSD (Portal) e CRQ/ARQ (Remedy).<br><br>
+                        
+                        <strong>• Consultoria VIVO DF - Análise de Redes (Ago 2015-Mar 2016):</strong> Análise técnica de redes TX PDH/SDH multi-fabricante (Ericsson/Marconi/NEC/Ceragon/ZTE/SIAE) e redes metro (Alcatel/Huawei/Tellabs). Verificação de conformidade de configurações com topologias de projeto. Cadastro de novos nós no sistema SMTX. Gestão de rede abrangendo AC/TO/MT/MS/GO/DF.<br><br>
+                        
+                        <strong>• Gerenciamento Projetos Nextel/OI (Out 2013-Ago 2015):</strong> Controle integral de rollout 2G/3G/4G para Nextel PR/SC/RS e OI RS. Coordenação de terceirizadas, análise de soluções, definição de escopos. Participação em reuniões estratégicas com clientes, sempre alinhado às diretrizes corporativas.<br><br>
+                        
+                        <strong>• Plataforma Gerência de Redes Claro (Jun-Out 2013):</strong> Mapeamento de circuitos em plataformas Marconi, Huawei e Tellabs para projetos Claro Ericsson RS/SC/RS.<br><br>
+                        
+                        <strong>• Configurações RNC/RXI Nacional (Jul 2012-Jun 2013):</strong> Configurações técnicas em RNC's e RXI's, testes, ampliações e integrações de NodeB/eNodeB para todos os clientes 3G/4G Ericsson no Brasil. Atuação como Acting Team Leader, interface com gestores de projetos e clientes, controle de demandas e garantia de compliance de processos.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Consultor Especialista em Telecomunicações</div>
+                            <div class="company">Morson-Ericsson-RICC</div>
+                        </div>
+                        <div class="period">Jul 2010 - Jul 2012</div>
+                    </div>
+                    <div class="job-description">
+                        Especialista técnico em configurações avançadas de equipamentos Ericsson para todo o portfólio de clientes no Brasil. Responsável por configurações em RNC's e RXI's, execução de testes de performance, ampliações de capacidade e integrações complexas de NodeB. Atuação em projetos críticos de rollout 3G com foco na otimização de redes e garantia de qualidade de serviço.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Consultor Engenharia de Transporte</div>
+                            <div class="company">Claro Matriz RJ</div>
+                        </div>
+                        <div class="period">Fev - Jul 2010</div>
+                    </div>
+                    <div class="job-description">
+                        Desenvolvimento de projetos e especificações técnicas para atendimento de demandas de transmissão TX IP/ATM/TDM. Elaboração de documentação de engenharia especializada incluindo cálculos de desempenho, Route Data e especificações técnicas para suporte às áreas de implantação de equipamentos da operadora Claro.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Coordenador/Supervisor de Projetos</div>
+                            <div class="company">Ericsson Gestão e Serviços</div>
+                        </div>
+                        <div class="period">Abr 2006 - Fev 2010</div>
+                    </div>
+                    <div class="job-description">
+                        <strong>Progressão de carreira: Técnico → Supervisor → Coordenador de Projetos</strong><br><br>
+                        Coordenação completa da estrutura de instalação de projetos telecom em todos os processos operacionais. Gestão direta de ASPs (Authorized Service Partners), supervisores de projetos e equipes técnicas. Elaboração e envio de relatórios diários de status para Project Managers. Desenvolvimento e execução de planilhas de controle e cronogramas de rollout. Participação ativa em reuniões estratégicas de rollout com clientes, garantindo alinhamento com objetivos corporativos e satisfação do cliente.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Técnico em Telecomunicações / Site Controller</div>
+                            <div class="company">Recursus Engenharia</div>
+                        </div>
+                        <div class="period">Jun 2004 - Abr 2006</div>
+                    </div>
+                    <div class="job-description">
+                        Supervisão e execução técnica de montagem e configuração de equipamentos GSM/WCDMA/PDH Ericsson para clientes em múltiplos estados (RS/SC/PR/AM/AP). Responsável pela supervisão de equipes de montagem, execução de configurações técnicas avançadas e garantia de qualidade na implementação de soluções de telecomunicações. Atuação como Site Controller garantindo compliance com padrões Ericsson e especificações de projeto.
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Formação Acadêmica</h2>
+                
+                <div class="education-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">MBA em Data Science</div>
+                            <div class="company">Unopar</div>
+                        </div>
+                        <div class="period">2023</div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Pós-graduação em DevOps</div>
+                            <div class="company">Unopar</div>
+                        </div>
+                        <div class="period">2023</div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Análise e Desenvolvimento de Sistemas</div>
+                            <div class="company">Unopar</div>
+                        </div>
+                        <div class="period">2022</div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Analista de Negócios</div>
+                            <div class="company">Unisinos</div>
+                        </div>
+                        <div class="period">2012</div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Técnico em Telecomunicações</div>
+                            <div class="company">ULBRA</div>
+                        </div>
+                        <div class="period">2003</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Competências Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Cloud & Infraestrutura</h3>
+                        <ul class="skill-list">
+                            <li>Microsoft Azure (Certificado AZ-900)</li>
+                            <li>AWS (Certificado Cloud Practitioner)</li>
+                            <li>Windows Server (Ambientes On-Premise)</li>
+                            <li>Redes POL Fiberhome</li>
+                            <li>Mikrotik</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Telecomunicações</h3>
+                        <ul class="skill-list">
+                            <li>Redes 2G/3G/4G/5G</li>
+                            <li>PTN/DWDM Huawei</li>
+                            <li>Equipamentos Ericsson</li>
+                            <li>Redes TX PDH/SDH</li>
+                            <li>VoIP e Telefonia</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Desenvolvimento</h3>
+                        <ul class="skill-list">
+                            <li>JavaScript / React</li>
+                            <li>HTML5 / CSS3</li>
+                            <li>Git / GitHub</li>
+                            <li>Desenvolvimento Full Stack</li>
+                            <li>Arduino / Automação</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Metodologias</h3>
+                        <ul class="skill-list">
+                            <li>DevOps</li>
+                            <li>ITIL v4</li>
+                            <li>Six Sigma</li>
+                            <li>Metodologias Ágeis</li>
+                            <li>PMI</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Certificações</h2>
+                <div class="certifications">
+                    <div class="cert-item">
+                        <div class="cert-name">AWS Cloud Practitioner</div>
+                        <div class="cert-issuer">Amazon Web Services</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-name">Microsoft Azure AZ-900</div>
+                        <div class="cert-issuer">Microsoft</div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-name">Desenvolvedor Web Full Stack</div>
+                        <div class="cert-issuer">Trybe</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Idiomas & Informações Adicionais</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Idiomas</h3>
+                        <ul class="skill-list">
+                            <li>Português (Nativo)</li>
+                            <li>Inglês (Intermediário)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Informações Pessoais</h3>
+                        <ul class="skill-list">
+                            <li>40 anos, Casado</li>
+                            <li>Disponibilidade para viagens</li>
+                            <li>Possuo CNPJ aberto</li>
+                            <li>CNH categoria AB</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        // Função para imprimir/salvar como PDF
+        function printResume() {
+            window.print();
+        }
+        
+        // Adicionar botão de impressão (opcional)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Você pode adicionar um botão de impressão se desejar
+            const printButton = document.createElement('button');
+            printButton.textContent = 'Salvar como PDF';
+            printButton.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #3498db;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+                z-index: 1000;
+                font-size: 14px;
+            `;
+            printButton.onclick = printResume;
+            document.body.appendChild(printButton);
+        });
+    </script>
+</body>
+</html>
