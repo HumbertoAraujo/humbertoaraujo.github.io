@@ -1,15 +1,15 @@
 function animationPicture(){
-    const picture = document.getElementById('foto');
+    const picture = document.querySelector('.profile-img');
     picture.addEventListener('click', function(){
-        window.animatelo.flip('#foto');
-        window.animatelo.jello('.nav');
-        
-    })
-
+           })
 }
 
 AOS.init();
-window.animatelo.flip('#foto');
-window.animatelo.fadeIn('#paragrafo');
-window.animatelo.jello('.nav');
+window.animatelo.flip('.profile-img');
 animationPicture();
+
+const toggle = document.querySelector('.mobile-toggle');
+const menu = document.querySelector('.nav-menu');
+toggle.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});

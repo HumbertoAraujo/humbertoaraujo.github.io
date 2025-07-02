@@ -559,3 +559,34 @@ body {
 .hero::before {
   pointer-events: none;
 }
+@media (max-width: 768px) {
+  .hero-text h1 {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .mobile-toggle {
+    display: flex;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 999;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
