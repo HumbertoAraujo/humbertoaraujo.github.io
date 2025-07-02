@@ -556,3 +556,6 @@ body {
       font-size: 2rem;
   }
 }
+.hero::before {
+  pointer-events: none;
+}

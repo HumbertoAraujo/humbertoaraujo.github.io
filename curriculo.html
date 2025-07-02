@@ -565,17 +565,21 @@
         </div>
     </div>
     <script>
-        // Função para imprimir/salvar como PDF
-        function printResume() {
-            window.print();
+        // Função para baixar o PDF em vez de imprimir
+        function downloadResume() {
+            const link = document.createElement('a');
+            link.href = 'CurriculoHumbertoOA.pdf'; // Caminho relativo
+            link.download = 'CurriculoHumbertoOA.pdf'; // Nome do arquivo que será salvo
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
-        
-        // Adicionar botão de impressão (opcional)
+    
+        // Adiciona botão de download
         document.addEventListener('DOMContentLoaded', function() {
-            // Você pode adicionar um botão de impressão se desejar
-            const printButton = document.createElement('button');
-            printButton.textContent = 'Salvar como PDF';
-            printButton.style.cssText = `
+            const downloadButton = document.createElement('button');
+            downloadButton.textContent = 'Download CV';
+            downloadButton.style.cssText = `
                 position: fixed;
                 top: 20px;
                 right: 20px;
@@ -588,9 +592,9 @@
                 z-index: 1000;
                 font-size: 14px;
             `;
-            printButton.onclick = printResume;
-            document.body.appendChild(printButton);
+            downloadButton.onclick = downloadResume;
+            document.body.appendChild(downloadButton);
         });
-    </script>
+    </script>   
 </body>
 </html>
