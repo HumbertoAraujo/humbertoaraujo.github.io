@@ -566,10 +566,10 @@ body {
 }
 @media (max-width: 768px) {
   .mobile-toggle {
-    display: flex;
+    display: none;
   }
   .nav-menu {
-    display: none;
+    display: flex;
   }
   .nav-menu.active {
     display: flex;
