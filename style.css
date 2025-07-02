@@ -571,7 +571,7 @@ body {
   .nav-menu {
     display: flex;
   }
-  .logo {
+  #nav {
     display: flex;
     flex-direction: column;
     gap: 1rem;
